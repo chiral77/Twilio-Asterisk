@@ -20,7 +20,7 @@ https://www.zoiper.com/en/voip-softphone/download/current
 Setup zopier with user name and login 
 
 <a href="https://www.twilio.com">
-  <img src="zopiers-setup.png" alt="zopier-setup" width="250" />
+  <img src="zopier-setup.png" alt="zopier-setup" width="250" />
 </a>
 
 3. Setup Twilio SIP trunk in Twilio account following instructions:
