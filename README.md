@@ -1,6 +1,23 @@
 # Twilio-Asterisk
 Asterisk SIP Trunking
 
+This project provides the following configuration for Twilio SIP Trunking to an Asterisk PBX with extensions of the Zoiper softphone.
+
+
+       +--------+     +----------+              + -----------+
+       | Zoiper |-----|          |              |            |
+       +--------+     |          |  ingress     |            |
+                      |          |------------->|   Twilio   |
+       +--------+     | Asterisk |              |            |
+       | Zoiper |-----|          |<-------------|            |
+       +--------+     |          |  egress      |            |
+                      +----------+              +------------+
+       
+UNI (registered) interface is configurated between the Asterisk PBX and Twilio to avoid opening the pinghole of firewall and IP address setting.
+This is one of the key difference from Twilio SIP trunking Asterisk unregistered tutorial. 
+
+The Twilio number can be defined in Asterisk configuration as the main number of Asterisk PBX with prompt-n-collect to reach individual extension, or defined as DID for a specific extension.
+       
 Install Asterisk asterisk-certified-16.8-current.tar.gz
 
 1. Follow instructions to set up Asterisk
